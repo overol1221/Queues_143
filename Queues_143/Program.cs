@@ -43,6 +43,8 @@ namespace Queues_143
                 /* if REAR is not at the last position, then its value is increented by one */
                 REAR = REAR + 1;
             }
+            /* Once the position of REAR is determinated, the element is added at its proper place */
+            queue_array[REAR] = element;
             
             
 
