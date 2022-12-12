@@ -40,6 +40,8 @@ namespace Queues_143
                 if (REAR == max - 1)
                     REAR = 0;
                 else;
+                /* if REAR is not at the last position, then its value is increented by one */
+                REAR = REAR + 1;
             }
             
             
