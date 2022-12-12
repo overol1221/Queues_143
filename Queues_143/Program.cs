@@ -21,7 +21,7 @@ namespace Queues_143
         public void insert(int element)
         {
             /*This statement checks for the overflow condition */
-            if ((FRONT == 0 && REAR == max - 1) ||(FRONT == REAR +1))
+            if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1))
             {
                 Console.WriteLine("\nQueue overvlow\n");
                 return;
@@ -45,6 +45,20 @@ namespace Queues_143
             }
             /* Once the position of REAR is determinated, the element is added at its proper place */
             queue_array[REAR] = element;
+        
+
+        public void remove()
+        {
+            /* Checks wheather the queue is empty */
+            if (FRONT == -1)
+            {
+                Console.WriteLine("Queue underflow\n");
+            }
+
+        }
+        
+
+        
             
             
 
