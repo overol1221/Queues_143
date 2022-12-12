@@ -20,7 +20,13 @@ namespace Queues_143
         }
         public void insert(int element)
         {
-
+            /*This statement checks for the overflow condition */
+            if ((FRONT == && REAR == max - 1) ||(FRONT == REAR +1))
+            {
+                Console.WriteLine("\nQueue overvlow\n");
+                return;
+            }
+            
 
         }
         static void Main(string[] args)
