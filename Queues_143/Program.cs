@@ -45,7 +45,7 @@ namespace Queues_143
             }
             /* Once the position of REAR is determinated, the element is added at its proper place */
             queue_array[REAR] = element;
-        
+        }
 
         public void remove()
         {
@@ -53,6 +53,19 @@ namespace Queues_143
             if (FRONT == -1)
             {
                 Console.WriteLine("Queue underflow\n");
+                return ;
+            }
+            Console.WriteLine("\nThe Elements deleted from queue is: " + queue_array[FRONT]
+                + "\n");
+            /* check if the queue has one element */
+            if (FRONT == REAR)
+            {
+                FRONT = -1;
+                REAR = -1;
+            }
+            else
+            {
+
             }
 
         }
@@ -63,7 +76,10 @@ namespace Queues_143
             
 
         }
+
+
         static void Main(string[] args)
+
         {
         }
     }
