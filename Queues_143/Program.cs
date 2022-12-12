@@ -21,6 +21,7 @@ namespace Queues_143
         public void insert(int element)
         {
 
+
         }
         static void Main(string[] args)
         {
